@@ -1,0 +1,15 @@
+{
+  "name": "files-mentioned-by-the-user-screenshot",
+  "version": "1.0.0",
+  "description": "移动端时间流水账 PWA",
+  "scripts": {
+    "dev": "python -m http.server 4173 --bind 127.0.0.1",
+    "build": "node -e \"console.log('Static PWA: no build step required')\"",
+    "preview": "python -m http.server 4173 --bind 127.0.0.1",
+    "test": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

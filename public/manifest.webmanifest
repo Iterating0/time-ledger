@@ -1,0 +1,19 @@
+{
+  "name": "时间追踪",
+  "short_name": "时间追踪",
+  "description": "移动端时间流水账和每日占比统计",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#f8f7f2",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
