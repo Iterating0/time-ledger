@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f8f7f2" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="时间追踪" />
+    <title>时间追踪</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-bar">
+        <div>
+          <h1>时间追踪</h1>
+          <div class="current-line">
+            <span class="dot" id="activeDot"></span>
+            <span id="activeText">当前未开始</span>
+            <strong id="activeDuration">0分钟</strong>
+          </div>
+        </div>
+        <button class="round-button" id="settingsButton" type="button" aria-label="编辑分类">
+          <span aria-hidden="true">⚙</span>
+        </button>
+      </header>
+
+      <section class="category-grid" id="categoryGrid" aria-label="时间分类"></section>
+
+      <nav class="bottom-actions" aria-label="操作">
+        <button class="secondary-action" id="statsButton" type="button">查看全部</button>
+        <button class="danger-action" id="clearButton" type="button">清空记录</button>
+      </nav>
+    </main>
+    <div id="modalRoot"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>
